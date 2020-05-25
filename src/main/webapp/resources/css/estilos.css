@@ -1,0 +1,86 @@
+@charset "ISO-8859-1";
+
+/* body {
+	font-family: 'Roboto', sans-serif;
+} */
+
+header {
+	padding: 20px 0;
+	background: #BBBBBB;
+}
+
+main {
+	margin: 20px;
+}
+
+.cabecalho {
+	width: 940px;
+	height: 40px;	
+	position: relative; /* a caixa "levanta" para que o nav, com o position absolute, fique dentro dela */
+	margin: 0 auto; /* margin auto significa que ficará centralizada na tela */
+}
+
+nav {
+	position: absolute; /* 	1-absolute: assume uma posição fixa em relação à tela e tal posição pode ser definida com o top, right ... 
+							2-relative: a partir de um ponto inicial o elemento pode ser deslocado com top, riht etc 
+							FLOAT: 1-faz flutar um elemento, mas a sombra dele continua sendo ocupada e os elementos passam a rodeá-lo 
+									preciso escolher o lado (left ou right). Todos os elementos abaixo sobem. Para consertar, pode 
+									utilizar a propriedade clear no elemento a partir do qual não queremos que suba, indicando o mesmo
+									lado escolhido na propriedade float.
+							BOX-SIZING: é utilizado para o texto que está dentro do elemento seja quebrado???
+									
+						*/
+	top: 5px;
+	right: 0;
+}
+
+nav li {
+	display: inline; /* 1-display inline não há bloqueio do restante da tela. além disso, é exibido somente o tamanho do seu conteúdo
+						2-inline-block é exibido por padrão o tamanho do conteúdo mas é possível alterar este tamanho 
+						3-block o conteúdo ocupa toda a linha
+						*/
+	margin: 0 0 0 25px; /*separa os menus*/
+}
+
+nav a {
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.tabela, .cartao {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.tabela table {
+	width: 600px;
+}
+
+.tabela table tr td {
+	padding: 10px;
+}
+
+.input-padrao {
+	width: 100%;
+}
+
+.processos {
+	width: 940px;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+.processos li {
+	display: inline-block;
+    width: 32%;
+    margin: 0 3px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: top;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
